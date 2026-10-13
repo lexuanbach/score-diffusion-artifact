@@ -1,19 +1,19 @@
 {
   ".gitignore": {
-    "bytes": 119,
-    "sha256": "8c8acb172be09dfafa44ca8eddb4871c2b4535a39c6bd80ed39639e261d67d7b"
+    "bytes": 377,
+    "sha256": "26bc2050a6139324858fcf6a132bfac3e5ceecca358b3448bd06080836f200ac"
   },
   "DATA.md": {
     "bytes": 2784,
     "sha256": "8041368fd51aa6a38d2ccf214691d40bb90a85714f98d6640edf1d06e29e3715"
   },
   "README.md": {
-    "bytes": 3923,
-    "sha256": "301b25185dac60f23af02077611e617e0f55e2958bb71e55731385f71f266f62"
+    "bytes": 4471,
+    "sha256": "5d5f95ba173f8728052da6e7757feafc1295054865ebabd823b55c3a43611823"
   },
   "REPRODUCE.md": {
-    "bytes": 6848,
-    "sha256": "c51d37ad778b7eeafe021346256f0aad954a2bb633e4fb7139845dee58efb308"
+    "bytes": 7837,
+    "sha256": "8d609bc201ba643dee43b6878d55688934b13ef2dfb66babe4330f069cce0476"
   },
   "THIRD_PARTY.md": {
     "bytes": 2091,
@@ -30,10 +30,6 @@
   "data/README.md": {
     "bytes": 206,
     "sha256": "46d0b29ef72c1d6f88189318c5d9ce3586bfaae236980aadb7cf56d3e90c51de"
-  },
-  "docs/VALIDATION.md": {
-    "bytes": 2033,
-    "sha256": "e817081cb78a1af8c23231bc9f01d3ba1c6df1549fdfd668292ae2e2fc5f82c8"
   },
   "docs/data-files.json": {
     "bytes": 14057,
@@ -608,8 +604,8 @@
     "sha256": "98ed046be88ec562e854f0c80676eeaf05f70bca363e0dfa127040a876a77e15"
   },
   "scripts/verify.py": {
-    "bytes": 910,
-    "sha256": "3a7ff4e824b9a41ed787c4d5de01bc68633cbcd00c08e313f812e1c1f3102129"
+    "bytes": 1261,
+    "sha256": "279ed99cd4c1c4004bd1ae009b173db304d32a2428d01c7427138fc51ce2e36e"
   },
   "src/analyze_csbm.py": {
     "bytes": 4356,

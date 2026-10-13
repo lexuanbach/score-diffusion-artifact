@@ -10,3 +10,12 @@ data/*
 results/preds/
 
 runs/
+
+# Internal review and audit material is never part of the public artifact.
+[Rr][Ee][Vv][Ii][Ee][Ww]*
+[Aa][Uu][Dd][Ii][Tt]*
+*[._-][Rr][Ee][Vv][Ii][Ee][Ww]*
+*[._-][Aa][Uu][Dd][Ii][Tt]*
+[Rr][Ee][Bb][Uu][Tt][Tt][Aa][Ll]*
+[Ss][Aa][Nn][Ii][Tt][Yy]*
+VALIDATION.md

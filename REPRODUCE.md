@@ -85,3 +85,11 @@ Follow upstream installation requirements if extra PyG extensions are needed. Th
 ## Interpreting differences
 
 Bootstrap means use fixed RNG seeds. Rendered reference numbers must match exactly in the validated environment. Floating-point plots/tables use tight tolerances. Retrained neural classifiers can vary with PyTorch/CUDA versions and reduction ordering, so compare coverage/set-size summaries rather than expecting identical model logits. The supplementary PDF specifies the statistical assumptions and metric definitions. The artifact does not turn the retrospective oracle into a deployable selector or replace the paper's stated limitations.
+
+## Reference provenance and reproduction scope
+
+The stored-output check covers 530 numerical values, 21 table/plot-data files, and 31 Figure 1 values. A Cora/GCN seed-0, split-0 recalibration matched the sizes and coverages of all 31 methods. This does not establish a full retraining reproduction or a fresh Linux/CUDA installation.
+
+`docs/source-snapshot.json` records the original numerical-source hashes. `docs/package-files.json` covers distributed files, and the data/prediction manifests cover extracted release contents. Source hashes identify the packaging snapshot, not a proven source revision for every historical run. Some original rows contain `code=nogit`.
+
+The public Hugging Face mirror at https://huggingface.co/datasets/lexuanbach/score-diffusion-predictions contains the identical prediction archive and per-file checksums. These are saved logits and split metadata, not state dictionaries or model weights. No historical trained weights are included in this release.

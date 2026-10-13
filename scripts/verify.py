@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Check package and optional downloaded data/logits against stored checksums."""
-import argparse, hashlib, json
+import argparse, hashlib, json, re
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 p=argparse.ArgumentParser(description=__doc__);p.add_argument('--bundles',action='store_true');a=p.parse_args()
@@ -8,6 +8,10 @@ names=['package-files.json']+(['data-files.json','predictions-files.json'] if a.
 count=0
 for name in names:
     for rel,meta in json.loads((ROOT/'docs'/name).read_text()).items():
+        if re.search(r'(^|[/_.-])(reviews?|audits?|rebuttal|sanity|validation)([/_.-]|$)', rel, re.I):
+            raise SystemExit(f'Internal report is not allowed in the artifact: {rel}')
+        if Path(rel).suffix.lower() in ('.tex', '.bib', '.sty', '.cls'):
+            raise SystemExit(f'LaTeX source is not allowed in the artifact: {rel}')
         path=ROOT/rel
         if not path.is_file():raise SystemExit(f'Missing: {rel}')
         h=hashlib.sha256()

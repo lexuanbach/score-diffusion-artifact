@@ -30,7 +30,13 @@ A small level-2 check, without overwriting reference results:
 python scripts/run_stage.py --workdir runs/smoke run_cp.py --datasets Cora --models GCN --seeds 0 --splits 1 --alphas 0.05
 ```
 
-See [REPRODUCE.md](REPRODUCE.md) for all commands and the experiment-to-output map, [DATA.md](DATA.md) for data provenance, [docs/VALIDATION.md](docs/VALIDATION.md) for checks actually run, and [supplement.pdf](supplement.pdf) for proofs, pseudocode and metric definitions.
+See [REPRODUCE.md](REPRODUCE.md) for all commands and the experiment-to-output map, [DATA.md](DATA.md) for data provenance, and [supplement.pdf](supplement.pdf) for proofs, pseudocode and metric definitions.
+
+## Cached predictions on Hugging Face
+
+The [public prediction repository](https://huggingface.co/datasets/lexuanbach/score-diffusion-predictions) mirrors all 330 cached prediction files, with a SHA-256 manifest and download instructions. It contains the same `predictions.tar.gz` as the GitHub release.
+
+**These are logits, train/validation indices and training metadata, not model weights.** They reproduce conformal evaluation on the stored graphs, but cannot run the trained classifiers on new inputs. The original training script saved predictions only. Use the retraining instructions in REPRODUCE.md to train classifiers again.
 
 ## Contents
 
@@ -41,7 +47,7 @@ See [REPRODUCE.md](REPRODUCE.md) for all commands and the experiment-to-output m
 | `configs/experiments.json` | Dataset/model lists, seeds, split counts and main settings |
 | `results/` | Original per-run CSV/JSON measurements (predictions are release assets) |
 | `expected/` | Snapshot of reported values and plot/table data used for regression checks |
-| `docs/` | File hashes, environment snapshot, provenance and validation notes |
+| `docs/` | File hashes, environment snapshot, provenance |
 | `supplement.pdf` | Supplement only, with main-paper references retained as printed section/equation numbers |
 
 Reference results are read-only inputs by convention. Use `scripts/run_stage.py` for new experiments. Public release data contain research benchmark graphs and model outputs, not author credentials, server settings, review files or repository history.
