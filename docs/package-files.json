@@ -12,8 +12,8 @@
     "sha256": "5d5f95ba173f8728052da6e7757feafc1295054865ebabd823b55c3a43611823"
   },
   "REPRODUCE.md": {
-    "bytes": 7837,
-    "sha256": "8d609bc201ba643dee43b6878d55688934b13ef2dfb66babe4330f069cce0476"
+    "bytes": 8982,
+    "sha256": "d83bdb7b5b41ae9787e55fa33d30ef64737cd75ba10752e08c8d68d06c58ba55"
   },
   "THIRD_PARTY.md": {
     "bytes": 2091,
@@ -30,6 +30,10 @@
   "data/README.md": {
     "bytes": 206,
     "sha256": "46d0b29ef72c1d6f88189318c5d9ce3586bfaae236980aadb7cf56d3e90c51de"
+  },
+  "docs/cfgnn-selection.csv": {
+    "bytes": 68613,
+    "sha256": "e3e78f9d583190222ad797874d8556c6a5c4a255c7a956202e230d7a2b7b46ad"
   },
   "docs/data-files.json": {
     "bytes": 14057,
@@ -684,7 +688,7 @@
     "sha256": "9d113e6935f1d1a7857f44235090d19c7bc11510fd07f7be3edd8441864c2827"
   },
   "supplement.pdf": {
-    "bytes": 502710,
-    "sha256": "d4a4f14171ada0cd790482480130948212d4c1624513ae2aefc21a34563dc836"
+    "bytes": 521742,
+    "sha256": "fc27e2da15c706c4658ad3d363a2659a6127d2c5a514f3d1ea490fcc17a61046"
   }
 }

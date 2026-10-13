@@ -67,6 +67,25 @@ Review the printed commands, then add `--execute`. On a CPU-only machine use `--
 
 The publication results combined laptop CPU and H100 GPU runs. The laptop environment is recorded in `docs/environment-macos.lock.txt`; the historical server record names PyTorch 2.4 and PyG 2.8 but does not preserve a complete server lockfile. We cannot claim bitwise reproducible GPU training across platforms.
 
+## Stored result selection
+
+`src/render.py` sorts `results/cfgnn/*.csv.gz` lexicographically, concatenates
+rows in that order, and keeps the first row for each
+`(dataset, model, seed, split, alpha)` key. Thus an unsuffixed file takes
+precedence over its `_rev` counterpart for overlapping keys. `_rev` files
+still supply keys absent from the earlier file. These are alternative runs,
+not repeated observations to average. The resulting 500 canonical rows are
+listed in [docs/cfgnn-selection.csv](docs/cfgnn-selection.csv), with source-file
+SHA-256 and one-based data-row numbers (excluding the header). This selection
+matches the manuscript. The CoraFull mean size is 18.20. Choosing the other
+copies would give about 18.23, without changing the qualitative comparison.
+
+The DAPS protocol check uses dataset-specific adaptive coverage targets from
+the original protocol, not the main benchmark's fixed alpha: Cora-ML 0.060,
+CitationFull-CiteSeer 0.055, PubMed 0.070, and Amazon-Computers 0.067. Its
+reported changes are absolute differences in label count. The separate
+official-code CF-GNN Cora-ML diagnostic averages three runs at alpha 0.1.
+
 ## Official CF-GNN diagnostic
 
 The main benchmark uses the supplied `src/cfgnn.py` port and its documented published hyperparameters. A separate official-code Cora-ML diagnostic is preserved in `results/e0/cfgnn_official_coraml.csv`. Its historical source checkout was not hashed. The following pinned upstream checkout provides a concrete rerun recipe, but is not claimed to reconstruct the unidentified historical commit:
