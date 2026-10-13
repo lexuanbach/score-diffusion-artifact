@@ -1,0 +1,12 @@
+{
+ "dataset": "Chameleon-filtered",
+ "n": 890,
+ "K": 5,
+ "E_und": 8854,
+ "f": 2325,
+ "h_edge": 0.2360514998435974,
+ "h_adj": 0.029531441562857523,
+ "deg_mean": 19.896629213483145,
+ "deg_median": 9.0,
+ "isolated": 0
+}

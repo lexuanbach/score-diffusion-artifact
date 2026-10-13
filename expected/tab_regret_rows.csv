@@ -1,0 +1,14 @@
+APS (\lambda=0),none,15.9  +/-  5.1,25.4,1.7,70.1,22
+DAPS (\lambda=0.5),none,5.8  +/-  4.2,2.2,11.3,87.0,60
+Uniform random grid,none,10.7  +/-  5.2,8.7,13.7,109.4,20
+Soft agreement,none,8.1  +/-  3.6,12.5,1.6,61.8,28
+head-cp signed,none,14.7  +/-  10.2,23.3,1.7,229.5,30
+head-cp edge,none,6.0  +/-  3.3,9.0,1.6,57.5,46
+head-cp v3,none,7.4  +/-  4.2,4.9,11.1,84.9,38
+Self-normalised gate,none,2.5  +/-  0.5,2.8,2.0,8.5,48
+Bounded gate (Eq.~eq:adjhom),none,3.0  +/-  1.1,3.8,1.7,20.0,56
+DAPS-cal,m/2 cal.,2.9  +/-  0.7,3.7,1.8,10.0,56
+DAPS-val,val.,1.7  +/-  0.3,2.1,1.2,5.0,64
+hg-daps,train,3.5  +/-  1.3,4.8,1.6,24.6,46
+Label gate,train,2.1  +/-  0.6,2.5,1.5,13.8,54
+SNR-\lambda eq:snrrule,train+val,2.2  +/-  0.5,2.9,1.3,11.6,42

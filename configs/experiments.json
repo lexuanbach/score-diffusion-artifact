@@ -1,0 +1,16 @@
+{
+  "datasets": ["Amazon-Photo", "Cora", "PubMed", "Amazon-Computers", "CiteSeer", "CoraFull", "Amazon-ratings", "Tolokers", "Chameleon-filtered", "Squirrel-filtered", "Questions", "Minesweeper", "Roman-empire"],
+  "binary_coverage_only": ["Tolokers", "Questions", "Minesweeper"],
+  "models": ["GCN", "GAT", "SAGE", "GCNII", "MLP"],
+  "seeds": [0, 1, 2, 3, 4],
+  "splits_per_seed": 10,
+  "alphas": [0.05, 0.1],
+  "primary_alpha": 0.05,
+  "train_fraction": 0.2,
+  "validation_fraction": 0.1,
+  "calibration_size": "min(1000, floor(pool_size/2))",
+  "scalar_grid": [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
+  "calibration_size_sweep": [1000, 100, 200, 500, 2000],
+  "csbm": {"nodes": 5000, "classes": [2,5], "homophily": "0:0.05:1", "degrees": [3,5,10,20,50], "sigma": [0.5,1,2], "seeds": "0..9", "splits_per_seed": 5},
+  "shift_datasets": ["ogbn-arxiv", "Amazon-Computers", "Amazon-ratings"]
+}

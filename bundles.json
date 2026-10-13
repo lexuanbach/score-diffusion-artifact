@@ -1,0 +1,16 @@
+{
+  "repository": "lexuanbach/score-diffusion-artifact",
+  "release": "v1.0.0",
+  "assets": {
+    "data.tar.gz": {
+      "bytes": 402043553,
+      "sha256": "8a73dbf9d0bb78d760b6528fbea7d84b8ff75c94d6769e97b624b59a965480ae",
+      "files": 89
+    },
+    "predictions.tar.gz": {
+      "bytes": 343509878,
+      "sha256": "5f7d44436735100afe708ecc31efdaca7372d736fe3ffed4a08814c2ee8777b5",
+      "files": 330
+    }
+  }
+}

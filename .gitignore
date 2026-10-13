@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+outputs/
+bundles/
+data/*
+!data/README.md
+!data/manifest.json
+results/preds/
+
+runs/

@@ -1,0 +1,12 @@
+{
+ "dataset": "Minesweeper",
+ "n": 10000,
+ "K": 2,
+ "E_und": 39402,
+ "f": 7,
+ "h_edge": 0.6827825903892517,
+ "h_adj": 0.009364827516372767,
+ "deg_mean": 7.8804,
+ "deg_median": 8.0,
+ "isolated": 0
+}

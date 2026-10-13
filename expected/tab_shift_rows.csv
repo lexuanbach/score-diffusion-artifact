@@ -1,0 +1,8 @@
+Computers,low → high,.969,.984,.985,.954,.967
+Computers,high → low,.956,.941,.942,.957,.964
+Computers,uniform (reference),.949,.950,.950,.951,.955
+Amazon-ratings,low → high,.951,.954,.954,.952,.956
+Amazon-ratings,high → low,.951,.945,.944,.950,.952
+Amazon-ratings,uniform (reference),.949,.949,.950,.950,.953
+ogbn-arxiv,≤2017  →  ≥2019,.969,.958,.950,.949,.953
+ogbn-arxiv,uniform (reference),.949,.949,.949,.950,.953
